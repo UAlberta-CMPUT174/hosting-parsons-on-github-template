@@ -5,7 +5,16 @@
 layout: page
 title: Module 4 Question 1
 ---
+Given the following grading scale: 
+
+A: [90, 100]
+
+B: [80, 89]
+
+C: [70, 79]
+
 Drag and drop the following code blocks to get the desired output for a specific average.
+
 
 <div id="sortableTrash" class="sortable-code"></div> 
 <div id="sortable" class="sortable-code"></div> 
