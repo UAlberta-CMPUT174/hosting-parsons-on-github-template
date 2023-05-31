@@ -1,0 +1,48 @@
+The following Python program is supposed to multiply every list element by 2. That is, the list nums should contain [2, 4, 6, 8, 10] after the program is done executing.
+
+Some parts of the program are missing. Complete the program so that it produces the desired output.
+
+
+<div id="sortableTrash" class="sortable-code"></div> 
+<div id="sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "nums = [1, 2, 3, 4]\n" +
+    "for i in range(len(nums)):\n" +
+    "	nums[i] = nums[i] * 2\n" +
+    "for i in range(len(nums)): #distractor\n" +
+    "nums[i] = nums[i] * 2 #distractor\n" +
+    "for item in nums: #distractor\n" +
+    "for i in range(nums): #distractor\n" +
+    "for i in len(range(nums)): #distractor\n" +
+    "item = item * 2 #distractor\n" +
+    "nums = nums * 2 #distractor\n" +
+    "nums[item] = nums[item] * 2 #distractor";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
