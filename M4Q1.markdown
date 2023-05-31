@@ -1,3 +1,10 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: page
+title: Module 4 Question 1
+---
 Drag and drop the following code blocks to get the desired output for a specific average.
 
 <div id="sortableTrash" class="sortable-code"></div> 
