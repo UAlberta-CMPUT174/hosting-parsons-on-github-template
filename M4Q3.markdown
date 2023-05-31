@@ -1,3 +1,10 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: page
+title: Module 4 Question 3
+---
 The following Python program is supposed to multiply every list element by 2. That is, the list nums should contain [2, 4, 6, 8, 10] after the program is done executing.
 
 Some parts of the program are missing. Complete the program so that it produces the desired output.
